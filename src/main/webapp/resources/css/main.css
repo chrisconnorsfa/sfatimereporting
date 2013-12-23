@@ -1,0 +1,23 @@
+/* 
+    Document   : main.css
+    Created on : 21-Aug-2013, 10:08:01
+    Author     : chriconn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+

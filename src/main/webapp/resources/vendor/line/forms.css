@@ -1,0 +1,271 @@
+.form .ctrlHolder {
+	clear: both;
+	float: none;
+	display: inline-block;
+}
+.form .hiddenHolder {
+	display: none;
+}
+.form fieldset {
+	background-color: #f8f8f6;
+	border-top: 1px dashed #dcdcd4;
+	border-bottom: 1px dashed #dcdcd4;
+	padding: 17px 20px;
+	margin-bottom: 10px;
+}
+.form .legend {
+	font-size: 1.8em;
+	color: #322664;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.form .legend .cufon {
+	float: left;
+}
+
+.ctrlHolder {
+	margin-bottom: 1.8em;
+	padding: 0;
+	width: 100%;
+}
+.ctrlHolder label, .ctrlHolder .label {
+	display: block;
+	margin-bottom: 0.334em;
+}
+.ctrlHolder ul.block-labels {
+	margin: 0;
+	padding: 0;
+	width: 230px;
+	float: left;
+}
+.ctrlHolder ul.block-labels.long {
+	width: 480px;
+}
+.ctrlHolder ul.block-labels li {
+	list-style-type: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 1em;
+	zoom: 1;
+	background-image: none;
+}
+
+.ctrlHolder ul.block-labels li:last-child {
+	margin: 0;
+}
+
+.form input[type=text], .form input[type=password] {
+	float: left;
+	width: 212px;
+}
+
+.form .short input[type=text], .form .short input[type=password]{
+	width: 116px;
+}
+
+.form .short select {
+	width: 134px;
+}
+
+.form input[type=radio],
+.form input[type=checkbox] {
+	width: auto;
+	float: left;
+	/* margin-left: -20px; */
+}
+.form .internalHolder {
+	width: 230px;
+	float: left;
+	display: inline-block;
+}
+.form .radio-boxes label {
+	width: auto;
+}
+.form .radio-boxes ul li label {
+	width: auto;
+	margin-left: 20px;
+	color: #737370;
+}
+.form .check-boxes label {
+	width: auto;
+	margin-left: 20px;
+	color: #737370;
+	}
+.form select {
+	float: left;
+	width: 230px;
+}
+.form textarea {
+	float: left;
+	width: 220px;
+	height: 100px;
+	resize: none;
+}
+
+.form .help-text {
+	float: left;
+	display: inline;
+	margin: 0 0 0 20px;
+	width: 230px;
+	display: inline;
+}
+.form .help-text p {
+	font-size: 1.1em;
+	margin: 6px 0 0 0;
+}
+
+.form .check-boxes .help-text p,
+.form .radio-boxes .help-text p {
+	margin: 0;
+}
+
+.form .check-boxes .label,
+.form .radio-boxes .label {
+	margin-bottom: 0.6em;
+}
+
+/* Date element */
+.form .date_input select,
+.form .date_of_birth_input select {
+	margin-right: 10px;
+}
+.form .date_input select.date-day,
+.form .date_input select.date-month,
+.form .date_of_birth_input select.date-day,
+.form .date_of_birth_input select.date-month {
+	width: 62px;
+}
+.form .date_input select.date-year {
+	width: 86px;
+	margin-right: 0px;
+}
+
+.form .date_of_birth_input input.date-year {
+	width: 68px;
+	margin-right: 0px;
+}
+
+/* Height / Weight elements */
+
+.form input.two_char_input {
+  width: 2em;
+}
+
+
+/* Sortcode element */
+.form .sortcode input {
+	margin-right: 10px;
+	width: 20px;
+}
+
+.form hr {
+	margin: 0.2em 0 1.7em 0;
+}
+
+/* Direct debit element */
+.form div.directdebit {
+	/*  height: 100px;*/
+	margin-bottom: 40px;
+}
+
+.form div.directdebit p {
+	padding-top: 5px;
+}
+
+.form div.directdebit div {
+	border-left: 1px dashed #dcdcd4;
+	float: right;
+	margin-left: 23px;
+	margin-top: 6px;
+	padding-left: 15px;
+	width: 130px;
+}
+
+.form div.directdebit div img {
+	border: medium none;
+	margin-bottom: 8px;
+	width: 78px;
+}
+
+.form div.directdebit div p {
+	font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.form ul.directdebit-infoot {
+
+  padding-right: 120px;
+  background: url('../images/common/directdebit_logo_small.png') no-repeat top right;
+
+}
+
+/* Applicants element */
+.form .applicants {
+  margin: 10px 0 15px 0;
+}
+
+.form .applicants p.removed {
+  margin: 5px 15px;
+  font-style: italic;
+}
+
+.form .applicants .row {
+  height: 50px;
+}
+
+.form .applicants .row span.field {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form .applicants .row span.field.forename {
+  width: 108px;
+}
+
+.form .applicants .row span.field.surname {
+  width: 138px;
+}
+
+.form .applicants .row span.field.premium {
+  width: 60px;
+}
+
+.form .applicants .row span.field.age {
+  width: 70px;
+}
+
+.form .applicants .row span.field.dbtn {
+  width: 40px;
+  margin-right: 0;
+}
+
+.form .applicants input.forename {
+  width: 90px;
+}
+
+.form .applicants input.surname {
+  width: 120px;
+}
+
+.form .applicants select.premium {
+  width: 60px;
+}
+
+.form .applicants select.age {
+  width: 70px;
+}
+
+.form .applicants .row span.field.dbtn a {
+  float: left;
+  display: block;
+  margin-top: 4px;
+/*  width: 36px;*/
+}
+

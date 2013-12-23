@@ -1,0 +1,2326 @@
+body {
+	background-color: #dcdcd4;
+	color: #000;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	font: 62.5% Arial, Verdana, sans-serif;
+}
+
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+figure img {
+	margin-bottom: 1em;
+}
+figure figcaption {
+	font-size: 1.2em;
+	margin-bottom: 3em;
+	color: #6f7072;
+}
+figure figcaption p {
+	font-size: 1em;
+}
+figure figcaption p:last-child {
+	margin-bottom: 0;
+}
+
+td,
+th {
+	font-size: 1.2em;
+	padding: 14px;
+	text-align: left;
+	vertical-align: top;
+}
+th {
+	font-weight: bold;
+	background-color: #f1f1ee;
+	color: #4a4a49;
+}
+td {
+	font-weight: normal;
+	color: #6f7072;
+}
+
+/* CHANGED */
+/*table {
+	width: 100%;
+	border-collapse: seperate;
+	*border-collapse: collapse;
+	border-spacing: 0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	margin: 0 0 3em;
+}
+p + table {
+	margin-top: 2em;
+}
+td,
+th {
+	font-size: 1.2em;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/td-border.gif) 0 bottom no-repeat;
+	padding: 14px;
+	text-align: left;
+	vertical-align: top;
+}
+th {
+	font-weight: bold;
+	background-color: #f1f1ee;
+	color: #4a4a49;
+}
+td {
+	font-weight: normal;
+	color: #6f7072;
+}
+table.zebra tr:nth-child(2n) td {
+	background-color: #fcfcfc;
+}
+table.zebra li{
+	margin-bottom: 0px;
+}
+th p, td p, th li, td li, th q, td q {
+	font-size: 1em;
+}
+th p:last-child,
+td p:last-child,
+th q:last-child,
+td q:last-child,
+td ul:last-child,
+th ul:last-child {
+	margin-bottom: 0;
+}
+thead:first-child tr:first-child th,
+thead:first-child tr:first-child td,
+tbody:first-child tr:first-child th,
+tbody:first-child tr:first-child td {
+	border-top: 1px solid #d3d3cc;
+	border-right: 1px solid #d3d3cc;
+	border-right: 0;
+}
+thead:first-child tr:first-child th:first-child,
+thead:first-child tr:first-child td:first-child,
+tbody:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-khtml-border-top-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+thead:first-child tr:first-child th:last-child,
+thead:first-child tr:first-child td:last-child,
+tbody:first-child tr:first-child th:last-child,
+tbody:first-child tr:first-child td:last-child {
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+tr td:first-child, tr th:first-child {
+	border-left: 1px solid #d3d3cc;
+}
+tbody:last-child tr:last-child td:first-child,
+tbody:last-child tr:last-child th:first-child,
+tfoot tr:last-child td:first-child,
+tfoot tr:last-child th:first-child {
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+tbody:last-child tr:last-child td:last-child,
+tbody:last-child tr:last-child th:last-child,
+tfoot tr:last-child td:last-child,
+tfoot tr:last-child th:last-child {
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+tbody:last-child tr:last-child td,
+tbody:last-child tr:last-child th,
+tfoot:last-child tr:last-child td,
+tfoot:last-child tr:last-child th {
+	border-bottom: 1px solid #d3d3cc;
+	background-position: 0 0;
+}
+
+tbody td,
+tfoot td,
+tbody th,
+tfoot th {
+	border-right: 0;
+}
+tbody tr td:last-child,
+tfoot tr td:last-child {
+	border-right: 1px solid #d3d3cc;
+}
+
+tbody tr td:first-child,
+tbody tr th:first-child,
+tfoot tr td:first-child,
+tfoot tr th:first-child {
+	background-position: -1px bottom;
+}
+tbody:last-child tr:last-child td:first-child,
+tbody:last-child tr:last-child th:first-child,
+tfoot:last-child tr:last-child td:first-child,
+tfoot:last-child tr:last-child th:first-child {
+	background-position: -1px 0;
+}
+thead:first-child tr:first-child th:first-child,
+thead:first-child tr:first-child td:first-child,
+tbody:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+	background-position: -1px bottom;
+}
+thead:first-child tr:first-child th:last-child,
+thead:first-child tr:first-child td:last-child,
+tbody:first-child tr:first-child th:last-child,
+tbody:first-child tr:first-child td:last-child {
+	border-right: 1px solid #d3d3cc;
+}
+table label {
+	font-size: 1em;
+}
+table input {
+	font-size: 1em;
+}*/
+
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+fieldset {
+	clear: both;
+}
+
+em {
+	font-style: italic;
+}
+
+object {
+	margin-bottom: 20px;
+	display: block;
+}
+img {
+/*	border: 1px solid #dcdcd4;*/
+	vertical-align: bottom;
+}
+
+img.left,
+img.right {
+	margin: 0.3em 15px 1em 0;
+	float: left;
+	display: inline;
+}
+img.right {
+	margin-right: 0;
+	margin-left: 15px;
+	float: right;
+}
+img.no-border {
+	border: none;
+}
+#content p img{
+	margin-bottom:1.5em;
+}
+button {
+	cursor: pointer;
+}
+
+input, select, textarea {
+	font-size: 1.2em;
+	border: 1px solid #dcdcd4;
+	color: #737370;
+	font-family: Arial, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+input[type=text], input[type=password], textarea {
+	background: #fff url(../img/field.gif) -10px 0 repeat-x;
+	padding: 5px 8px 5px;
+}
+input[type=text], input[type=password], select, textarea {
+	border: 1px solid #bdbdb6;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+input[type=radio],
+input[type=checkbox] {
+	width: auto;
+	border: none;
+	*width: 13px;
+	*height: 13px;
+}
+select {
+	padding: 4px;
+}
+input[type=text]:focus, input[type=password]:focus, select:focus {
+	border-color: #b6d122;
+}
+input[type=text]:focus, input[type=password]:focus {
+	background-position: 0 0;
+}
+
+input.error[type=text]:focus, input.error[type=password]:focus {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/field-error.gif) 0 0 repeat-x;
+}
+
+input.error[type=text], input.error[type=password], select.error, textarea.error {
+	border-color: #b21307;
+}
+input[type=password]:disabled,
+input[type=text]:disabled,
+textarea:disabled,
+option:disabled,
+optgroup:disabled,
+select:disabled:disabled {
+	border-color: #cdcdc6;
+	background: #fbfbfb;
+}
+
+textarea {
+	padding-right: 0;
+}
+
+.error-text p {
+	color: #b21307;
+}
+
+label, .label {
+	color: #4a4a49;
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+
+/* CHANGED (ADDED) */
+.label-text {
+	color: #4a4a49;
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+/* CHANGED */
+/* Button styles */
+/*.btn {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 23px;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/buttons/sprite.gif) 0 0 no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+*/
+	/** ie */
+/*	*text-indent: 0;
+	*font-size: 0;
+	*line-height: 0;
+}*/
+
+
+.btn-continue { width: 104px; background-position: 0 0; }
+.btn-continue:hover { background-position: 0 -25px; }
+.btn-continue.disabled { background-position: 0 -50px; }
+
+.btn-what-to-do-next { width: 148px; background-position: 0 -75px; }
+.btn-what-to-do-next:hover { background-position: 0 -100px; }
+.btn-what-to-do-next.disabled { background-position: 0 -125px; }
+
+.btn-find-out-more { width: 135px; background-position: 0 -150px; }
+.btn-find-out-more:hover { background-position: 0 -175px; }
+.btn-find-out-more.disabled { background-position: 0 -200px; }
+
+.btn-submit { width: 90px; background-position: 0 -225px; }
+.btn-submit:hover { background-position: 0 -250px; }
+.btn-submit.disabled { background-position: 0 -275px; }
+
+.btn-submit-application { width: 169px; background-position: 0 -300px; }
+.btn-submit-application:hover { background-position: 0 -325px; }
+.btn-submit-application.disabled { background-position: 0 -350px; }
+
+.btn-download-app { width: 225px; background-position: 0 -375px; }
+.btn-download-app:hover { background-position: 0 -400px; }
+.btn-download-app.disabled { background-position: 0 -425px; }
+
+
+
+
+.link-back { _display: inline; display: inline-block; background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/link-back.gif) 0 center no-repeat; font-size: 1.2em; padding-left: 10px; }
+.form .controls { width: 100%; overflow: hidden; padding-top: 10px; }
+.form .controls .link-back { margin-top: 0.4em; float: left;}
+.form .controls .btn { float: right; margin-left: 20px; display: inline; }
+
+sup {
+	vertical-align: top;
+}
+
+a {
+	color: #312766;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a .cufon {
+	cursor: pointer;
+}
+ul,ol {
+	margin: 0 0 1em;
+	padding: 0;
+}
+/* CHANGED */
+/*li {
+	line-height: 1.4;
+	margin: 0;
+	margin-bottom:10px;
+	padding:0 0 0 10px;
+	font-size: 1.2em;
+	color: #6f7072;
+	list-style: none;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/bullet-small.gif) 0 0.6em no-repeat;
+}*/
+ol {
+	margin-left: 2em;
+}
+ol li{
+	background: none;
+	padding:0px;
+	list-style: inherit;
+}
+dl, dd, dt {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+dd {
+	margin-left: 1em;
+}
+
+hr {
+	border: 0;
+	border-top: 1px dashed #dcdcd4;
+	height: 0;
+	margin: 2.5em 0;
+	display: block;
+	clear: both;
+	*margin: 1.8em 0; /* <ie7 workaround */
+	-moz-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	-webkit-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	-khtml-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0 0 1em;
+	font-size: 1.2em;
+	overflow: hidden;
+	color: #312766;
+}
+
+h1 {
+	font-size: 2.4em;
+	/*font-family: Sentinal, Georgia, serif;*/
+	color: #312766;
+	font-weight: bold;
+	margin-bottom: 0.38em;
+	line-height: 0.9;
+	padding: 0.2em 0;
+}
+h2 {
+	font-size: 1.8em;
+	margin-bottom: 0.55em;
+	line-height: 1.4;
+}
+h2.sub {
+	font-size: 1.8em;
+	margin-top: -0.5em;
+	margin-bottom: 1.32em;
+	color: #312766;
+}
+
+h3{
+	margin-bottom:0.6em;
+}
+h2 + h3{
+	margin-top:1.2em;
+}
+p, q {
+	font-size: 1.2em;
+	color: #6f7072;
+	line-height: 1.417;
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+q {quotes:none}
+q:before{content:"\201C"}
+q:after{content:"\201D"}
+q q:before{content:"\2018"}
+q q:after{content:"\2019"}
+
+p small {
+	font-size: 0.834em;
+}
+
+.required-text {
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.required-text p {
+	font-size: 1.1em;
+}
+
+a.sfLogo {
+	width: 134px;
+	height: 84px;
+	display: block;
+	background: transparent url(../img/logo.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+
+/* IE6 Message Bar - Update Internet Explorer */
+
+#ie6_message {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 590px;
+  padding: 6px 12px 12px 40px;
+  background: #b6d122 url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/ie6-warning.gif) no-repeat 12px 11px;
+  margin: 0 auto 12px auto;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 9px;
+}
+
+#ie6_message p {
+  margin-bottom: 0.1em;
+  line-height: 1.3em;
+  text-align: left;
+  color: #4a4a49;
+}
+
+#ie6_message p.h1 {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#ie6_message p a {
+  font-weight: bold;	
+  color: #312463;
+}
+
+#ie6_message .close {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  margin: 6px 0 0 0;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  background: #b6d122 url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/ie6-close.gif) no-repeat 0 0;  
+  display: inline-block;
+  text-indent: -5000px;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	margin-top: 10px;
+}
+#header {
+	background-color: #fff;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-khtml-border-top-left-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+
+	padding: 20px 15px 0px;
+	float: left;
+	width: 930px;
+	min-height: 121px;
+}
+#header-inner {
+	margin-bottom: 18px;
+	width: 930px;
+	float: left;
+	min-height: 65px;
+}
+#header-inner:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html #header-inner { zoom: 1; } /* IE6 */
+*:first-child+html #header-inner { zoom: 1; } /* IE7 */
+
+#header .sfLogo {
+	margin-left: 16px;
+	float: left;
+	display: inline;
+	margin-top: -14px;
+}
+#header .tel {
+	float: right;
+	clear: right;
+	font-size: 2.4em;
+	/*font: 2.4em Sentinal, Georgia, serif;*/
+	font-style: normal;
+	color: #adc71e;
+	background: transparent url(../img/tel-green.gif) 0 center no-repeat;
+	padding-left: 28px;
+	display: inline;
+}
+#header .tel .cufon {
+	float: left;
+}
+#header .tel sup {
+	font-size: 0.583em;
+	margin-top: 0.3em;
+}
+#header .tel sup .cufon {
+	top: 2.5em;
+	position: relative;
+}
+#header #search-form {
+	float: right;
+	clear: right;
+	margin-top: 15px;
+	margin-right: -6px;
+	display: inline;
+	_width: 253px;
+}
+#header #search-form input {
+	float: left;
+	font-size: 1.1em;
+	width: 150px;
+}
+#header #search-form input.default {
+	font-style: italic;
+}
+#header #search-form label {
+	float: left;
+	font-size: 1.1em;
+	color: #6f7072;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+#header #search-form button {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 3px 0 0;
+	padding: 0;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/buttons/go-arrow.gif) 0 0 no-repeat;
+	border: 0;
+	text-indent: -9999px;
+}
+#footer {
+	background-color: #312766;
+	clear: both;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px 15px;
+	margin-bottom: 17px;
+}
+#footer-inner {
+	width: 930px;
+	overflow: hidden;
+}
+#footer ul {
+	width: 20%;
+	float: left;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: transparent url(../img/footer-divider.gif) right 0 repeat-y;
+	padding-top: 5px;
+	margin-bottom: 0;
+	zoom: 1;
+}
+#footer ul:nth-child(1) { width: 208px; padding-left: 0; }
+#footer ul:nth-child(2) { width: 198px; }
+#footer ul:nth-child(3) { width: 198px; }
+#footer ul:nth-child(4) { width: 186px; }
+#footer ul:last-child { border-right: 0; background-image: none; }
+
+
+#footer li {
+	font-size: 1.1em;
+	list-style: none;
+	float: left;
+	clear: left;
+	zoom: 1;
+	padding: 3px 0 4px;
+	background-image: none;
+	margin-bottom: 0px;
+}
+#footer a {
+	color: #c2bfd1;
+	float: left;
+}
+
+#legal-text {
+	padding: 0 15px;
+	margin-bottom: 6px;
+}
+#legal-text p {
+	font-size: 1.1em;
+	color: #8f908f;
+	margin: 0;
+}
+#legal-text p small {
+	font-size: 1em;
+}
+#social-links dd {
+	padding-top: 8px;
+	padding-bottom: 1px;
+}
+#social-links .addthis_toolbox {
+	padding-top: 6px;
+}
+/* CHANGED */
+/*
+#social-links {
+	float: right;
+	clear: both;
+	display: inline;
+	padding-bottom: 20px;
+	margin-right: 15px;
+}
+#social-links p {
+	float: left;
+	font-size: 1.1em;
+	line-height: 1;
+	padding-top: 4px;
+	color: #8f908f;
+	margin: 0;
+}
+#social-links ul {
+	float: left;
+	margin-bottom: 0;
+}
+#social-links li {
+	float: left;
+	list-style: none;
+	margin-left: 6px;
+	display: inline;
+	padding: 0;
+	background-image: none;
+}
+#social-links li a {
+	float: left;
+	width: 19px;
+	height: 19px;
+	display: block;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/footer-social.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+#social-links li.youtube a { background-position: 0 0; width: 38px; }
+#social-links li.youtube a:hover { background-position: 0 -31px; }
+#social-links li.twitter a { background-position: -44px 0; }
+#social-links li.twitter a:hover { background-position: -44px -31px; }
+#social-links li.facebook a { background-position: -69px 0; }
+#social-links li.facebook a:hover { background-position: -69px -31px; }
+*/
+#line-logo {
+	clear: both;
+	float: right;
+	text-align: right;
+	font-size: 1.1em;
+	color: #8F908f;
+	padding-bottom: 5px;
+	margin-right: 15px;
+	display: inline;
+}
+#line-logo span {
+	float: left;
+	display: inline;
+	margin-right: 5px;
+	padding-top: 5px;
+}
+#line-logo a {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/line-logo.gif) 0 0 no-repeat;
+	width: 56px;
+	height: 16px;
+	text-indent: -9999px;
+	float: left;
+	display: inline;
+	text-align: left;
+}
+
+#main {
+	float: left;
+	width: 100%;
+	clear: both;
+
+	overflow: hidden;
+	float: none;
+}
+#content-container {
+	width: 560px;
+	float: left;
+	display: inline;
+}
+#content {
+	width: 920px;
+	margin-left: 200px;
+	margin-left: 0;
+	padding: 0 20px 2.6em;
+	background-color: #fff;
+	margin-bottom: 6px;
+
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+
+	min-height:424px;
+	height:auto !important;
+	height:424px;
+}
+
+
+#content > div {
+	overflow: auto; /* margin collapse fix */
+}
+.sidebar {
+	width: 200px;
+	float: left;
+}
+#sidebar-left {
+	margin-left: -760px;
+	display: inline;
+}
+#sidebar-right {
+	overflow: hidden; /* ie6 fix */
+}
+#sidebar-right .sidebar-float-wrapper {
+	width: 200px;
+	top: 0 !important; /* required for position:fixed - used within js */
+}
+
+.puff dl, .puff dt, .puff dd {
+	margin: 0;
+	padding: 0;
+}
+
+.puff {
+	padding: 15px;
+	margin-bottom: 6px;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+}
+.puff li {
+	padding: 0.217em 0;
+}
+
+.puff dl dt {
+	font-size: 1.6em;
+	margin-bottom: 0.4em;
+/*	font-family: Sentinal, Georgia, serif;*/
+	width: 100%;
+	overflow: hidden;
+	padding-top: 0.2em;
+}
+.puff > dl > dt .cufon {
+	float: left;
+}
+.puff-secondary dl dt {
+	font-size: 2.2em;
+}
+.puff-primary dl dt {
+	font-size: 1.8em;
+	color: #fff;
+	padding-top: 0.45em;
+}
+.puff dl dl dt,
+.puff-primary dl dl dt,
+.puff-secondary dl dl dt {
+	font-size: 1em;
+}
+
+#sidebar-left .puff {
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-khtml-border-top-left-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+#sidebar-left .puff:first-child {
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	-khtml-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+}
+#sidebar-right .puff {
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+#sidebar-right .puff:first-child {
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	-khtml-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.puff figure {
+	padding-bottom: 1em;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/secondary-divider.gif) 0 bottom repeat-x;
+	margin-bottom: 2em;
+}
+.puff figure img {
+	margin-top: 0.4em;
+	margin-bottom: 1.2em;
+}
+
+.puff-primary { background-color: #312766; color: #c6c4dc; }
+.puff-secondary { background-color: #b6d122; color: #343b09; }
+.puff-tertiary { background-color: #a5a495; color: #fff; }
+
+.puff-primary p {
+	color: #c2bfd1;
+}
+.puff-tertiary p {
+	color: #fff;
+}
+.puff-tertiary .download-list {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/tertiary-divider.gif) 0 0 repeat-x;
+}
+
+/* primary colours */
+.puff-primary li { font-size: 1.2em; list-style: none; background-image: none; }
+.puff-primary a { color: #c6c4dc; text-decoration: none; }
+.puff-primary .active a { color: #fff; }
+.puff-primary:first-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/puff-first-purple.gif); }
+
+/* secondary colours */
+.puff-secondary li { font-size: 1.2em; list-style: none; }
+.puff-secondary a { color: #343b09; text-decoration: none; }
+.puff-secondary p { color: #343b09; }
+.puff-secondary p small { color: #6b7241; font-size: 0.917em; }
+.puff-secondary .active a { color: #000; }
+.puff-secondary:first-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/puff-first-green.gif); }
+
+.puff-secondary .btn-find-out-more {
+	width: 170px;
+	height: 26px;
+	display: block;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/buttons/secondary-find-out-more.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+
+.puff figure figcaption {
+	margin-bottom: 0;
+}
+
+/* tertiary colours */
+.puff-tertiary li { font-size: 1.2em; list-style: none; }
+.puff-tertiary a { color: #fff; text-decoration: none; }
+
+.puff-tertiary li {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/puff-arrow-tertiary.gif) 0 0.6em no-repeat;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+.puff-tertiary .link-more {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/tertiary-divider.gif) 0 0 repeat-x;
+	display: block;
+	overflow: auto;
+	padding-top: 0.6em;
+}
+.puff-tertiary .link-more p {
+	background: transparent url("http://www.scottishfriendly.co.uk/assets/site/images/common/puff-arrow-tertiary.gif") 0 0.5em no-repeat;
+	margin: 0;
+}
+.puff-tertiary .link-more a {
+	display: block;
+	padding-left: 10px;
+}
+
+.download-list {
+	padding-top: 1em;
+}
+.download-list li {
+	display: block;
+	width: 100%;
+	padding-left: 0;
+}
+.puff-secondary .download-list li a {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/secondary-download.gif) 0 0 no-repeat;
+}
+.puff-tertiary .download-list li a {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/tertiary-download.gif) 0 0 no-repeat;
+}
+.puff-tertiary .download-list li a:hover{
+	color: #454433;
+}
+.download-list li a {
+	padding-left: 20px;
+	display: block;
+}
+.download-list li span {
+	display: block;
+	font-size: 0.917em;
+}
+
+.grid {
+	width: 100%;
+	overflow: hidden;
+}
+.grid .grid-item {
+	float: left;
+	margin-right: 0;
+	display: inline;
+	width: 250px;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/divider.gif) 0 0 repeat-x;
+	padding-top: 10px;
+	padding-bottom: 13px;
+}
+.grid .grid-item:nth-child(2n+1) {
+	margin-right: 20px;
+	clear: both;
+}
+.grid .grid-item:nth-child(1),
+.grid .grid-item:nth-child(2) {
+	background-image: none;
+}
+.grid h2 {
+	font-size: 1.7em;
+	color: #312766;
+}
+.grid h2 a {
+	text-decoration: none;
+}
+.grid h2 a .cufon {
+	cursor: pointer;
+}
+.grid .grid-item li {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/bullet-small.gif) 0 0.6em no-repeat;
+	list-style: none;
+	padding-left: 10px;
+	color: #555;
+	margin-bottom: 0.4em;
+}
+.grid .grid-item li.lowlight {
+	color: #8c8d8e;
+}
+.grid .grid-item figcaption {
+	padding-top: 0.8em;
+	font-size: 1em;
+	margin-bottom: 0;
+}
+.grid .grid-item figcaption .btn {
+	margin-top: 0.3em;
+	display: block;
+}
+.grid figure img {
+	margin-bottom: 0;
+}
+
+#subnav {
+
+}
+#subnav ul {
+	padding: 1em 0 0.7em;
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+#subnav li {
+	padding: 0;
+	display: block;
+	zoom: 1;
+	margin-bottom:0px;
+}
+#subnav li a {
+	padding: 0.217em 12px;
+	display: block;
+	color: #c6c4dc;
+	overflow: hidden;
+}
+#subnav li a:hover {
+	color: #fff;
+}
+#subnav li.active > a {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/active-purple.gif) 0 0.5em no-repeat;
+	color: #fff;
+}
+
+#subnav li.active > span.top-level {
+	padding: 0.217em 12px;
+	display: block;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/active-purple.gif) 0 center no-repeat;
+	color: #fff;
+}
+
+/* nested sub-nav */
+#subnav ul ul {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/primary-divider.gif) 0 0 repeat-x;
+	margin-top: 0.2em;
+	padding: 0.4em 0 0;
+	margin-bottom: 1.2em;
+}
+#subnav ul ul li {
+	font-size: 1em;
+	padding-left: 12px;
+	margin-bottom: 0px;
+}
+#subnav ul ul li:last-child {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/primary-divider.gif) 0 bottom repeat-x;
+	padding-bottom: 0.35em;
+}
+#subnav ul ul li a {
+
+}
+/* nested*2 sub-nav */
+#subnav ul li.active ul.open{
+	background:none;
+    margin-top: 0;
+	margin-bottom:0;
+    padding-top: 0;
+}
+#subnav ul li.active ul.open li:last-child{
+	background:none;
+}
+/** primary nav */
+#nav {
+	clear: both;
+	border-top: 1px solid #dcdcd4;
+	border-bottom: 1px solid #dcdcd4;
+	padding: 0;
+	width: 930px;
+	/* requires a clear fix for ie7... */
+}
+#nav:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#nav ul {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#nav li {
+	list-style: none;
+	float: left;
+	font-size: 1.4em;
+	/*font-family: Sentinal, Georgia, serif;*/
+	padding: 0;
+	padding-left: 1px;
+	background-image: none;
+	margin-bottom: 0px;
+}
+#nav li:first-child, #nav li.active:first-child {
+	padding-left: 6px;
+}
+#nav li.active:first-child {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/active-prev.gif) -4px 10px no-repeat;
+}
+#nav li:first-child a {
+	border-left: 0;
+}
+#nav li a {
+	padding: 8px 17px;
+	float: left;
+	border-left: 1px solid #edede9;
+	position: relative;
+	outline: 0;
+}
+#nav li li a {
+	float: none;
+}
+#nav li.active, #nav li.hover {
+	position: relative;
+	margin-top: -11px;
+	margin-bottom: -1px;
+	border-left: 0;
+	padding-left: 1px;
+	margin-bottom: -6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#nav li.active a, #nav li.hover a {
+	border-color: #dcdcd4;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	padding-top: 13px;
+	position: relative;
+	margin-right: -1px;
+	margin-left: -1px;
+	padding-bottom: 9px;
+	background: #fff url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/gradient.gif) 0 1px repeat-x;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-khtml-border-top-left-radius: 4px;
+	-khtml-border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding-left: 18px;
+}
+#nav li.hover a {
+	background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/gradient-hover.gif);
+}
+#nav li.hover li a {
+	background-image: none;
+}
+
+#nav li.active-prev {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/active-prev.gif) right 0 no-repeat;
+}
+#nav li.active-next {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/active-next.gif) 0 0 no-repeat;
+}
+#nav li.active-next.hover { background-image: none; }
+#nav li.active-prev.hover { background-image: none; }
+
+body.homepage #nav ul,
+body.homepage #nav li {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/home-gradient.gif) 0 bottom repeat-x;
+}
+
+#nav li a span { float: left; background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/text.gif) 0 3px no-repeat; height: 20px; display: block; text-indent: -9999px; cursor: pointer; }
+#nav li li a span { background: none; }
+/* ie6 seems to get confused if we use body.home as well as li.home, so changed className to 'home-link' */
+#nav li.home-link a span { width: 38px; background-position: 0 3px; }
+#nav li.tax-free a span { width: 136px; background-position: -72px 3px; }
+#nav li.child-investments a span { width: 118px; background-position: -244px 3px; }
+#nav li.family-investments a span { width: 127px; background-position: -397px 3px; }
+#nav li.life-cover a span { width: 64px; background-position: -558px 3px; }
+#nav li.customer-centre a span { width: 107px; background-position: -656px 3px; }
+#nav li.contact-us a span { width: 68px; background-position: -798px 3px; }
+
+#nav li.home-link a {
+	padding-left: 19px;
+}
+
+/* note the use of '>' to prevent these active rules applying in ie6 */
+#nav li.home-link a:hover span, #nav li.home-link.active > a span { background-position: 0 -77px; }
+#nav li.tax-free a:hover span, #nav li.tax-free.active > a span { background-position: -72px -77px; }
+#nav li.child-investments a:hover span, #nav li.child-investments.active > a span { background-position: -244px -77px; }
+#nav li.family-investments a:hover span, #nav li.family-investments.active > a span { background-position: -397px -77px; }
+#nav li.life-cover a:hover span, #nav li.life-cover.active > a span { background-position: -558px -77px; }
+#nav li.customer-centre a:hover span, #nav li.customer-centre.active > a span { background-position: -656px -77px; }
+#nav li.contact-us a:hover span, #nav li.contact-us.active > a span { background-position: -798px -77px; }
+
+.nav-indicator-active { width: 9px; height: 6px; display: block; position: absolute; top: -9999px; left: -9999px; background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/arrow.png) 0 0 no-repeat; margin-top: 25px; margin-left: -4px; }
+.nav-indicator-active.home-link { margin-left: 1px; }
+
+/**
+* Breadcrumb
+*/
+.breadcrumb {
+	width: 100%;
+	overflow: hidden;
+	color: #6f7072;
+}
+.breadcrumb a,
+.breadcrumb span {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/breadcrumb-arrow.gif) 0 center no-repeat;
+	float: left;
+	font-size: 1.1em;
+	padding-right: 8px;
+	padding-left: 10px;
+}
+.breadcrumb a {
+	color: #6f7072;
+	text-decoration: none;
+}
+.breadcrumb a:first-child,
+.breadcrumb span:first-child {
+	padding-left: 0;
+	background-image: none;
+}
+.breadcrumb a:hover {
+	color: #312766;
+}
+.breadcrumb span {
+
+}
+
+/**
+* Custom puffs
+*/
+
+/* customer review puff */
+#customer-review.puff dd {
+	padding-top: 5px;
+}
+#customer-review.puff q {
+	font-size: 1.4em;
+	color: #fff;
+	font-style: italic;
+	font-family: Georgia;
+	line-height: 1.2;
+	display: block;
+}
+
+/* recently viewed puff */
+#recently-viewed.puff ul {
+	margin-bottom: 0.7em;
+}
+#recently-viewed.puff dl dt {
+	font-size: 1.8em;
+}
+#recently-viewed.puff dl dl dt {
+	font-size: 1em;
+}
+
+/* welcome puff */
+#welcome.puff dl dt {
+	font-size: 1.8em;
+}
+
+/* help puff */
+.puff-secondary .contact {
+	padding-bottom: 1em;
+}
+.puff-secondary .contact p {
+	margin-left: 20px;
+	margin-bottom: 0.2em;
+}
+.puff-secondary .contact small {
+	display: block;
+	line-height: 1.35;
+}
+.puff-secondary .contact .tel {
+	font-size: 1.6em;
+	/*font: 1.6em Sentinal, Georgia, serif;*/
+	font-weight: bold;
+	font-style: normal;
+	width: 80%;
+	overflow: hidden;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/tel.gif) 0 center no-repeat;
+	padding-left: 19px;
+	margin-bottom: 0.4em;
+}
+.puff-secondary .contact .tel .cufon {
+	float: left;
+}
+
+.btn-apply {
+	font-size: 1.333em;
+	padding: 4px 10px 6px;
+}
+#apply-today.puff p {
+	overflow: hidden;
+}
+#apply-today.puff .btn-apply {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	color: #343b09;
+	width: 130px;
+	padding-right: 30px;
+	overflow: hidden;
+	display: block;
+	background: #fff url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/apply-today-arrow.gif) right center no-repeat;
+	margin: 0.2em 0 0;
+	height: auto;
+
+	*text-indent: -9999px;
+	*font-size: 1.333em;
+	*line-height: 1.417;
+}
+
+#apply-today.puff a:hover.btn-apply {
+	background: #343b09 url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/apply-today-arrow-rollover.gif) right center no-repeat;
+	color: #fff;
+}
+
+#fancybox-content .btn-start-app {
+  width: 120px;
+}
+
+#apply-today.puff .btn-apply .cufon {
+	float: left;
+}
+#apply-today.puff .download-list {
+	padding-top: 0.2em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#apply-today.puff .download-list li {
+	line-height: 1.3;
+	margin-bottom: 0.2em;
+}
+#apply-today.puff .download-list span {
+	font-size: 0.917em;
+	color: #6b7241;
+	display: block;
+}
+#apply-today.puff .contact {
+	padding-top: 1.9em;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/secondary-divider.gif) 0 0 repeat-x;
+/*	margin-top: 1.5em;*/
+}
+
+/** Detailed apply today puff */
+#apply-today.puff dl dl {
+	font-size: 1em;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/secondary-divider.gif) 0 0 repeat-x;
+	padding-top: 1em;
+	padding-bottom: 0.7em;
+}
+#apply-today.puff dl dl dt {
+	font: 1.2em Arial, Verdana, sans-serif;
+	font-weight: bold;
+	margin-bottom: 1.2em;
+}
+#apply-today.puff dl dl dd {
+	font-size: 1em;
+}
+#apply-today.puff dl div .contact {
+	margin-top: 0;
+}
+
+#fancybox-content .popup-content {
+  text-align: left;
+}
+
+#fancybox-content label {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+/* form progress puff */
+#progress.puff ul {
+	border-left: 1px solid #5e568a;
+	position: relative;
+	margin-left: 5px;
+	margin-bottom: 1.1em;
+}
+#progress.puff li {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/incomplete.gif) 0 center no-repeat;
+	margin-left: -5px;
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 0;
+}
+#progress.puff li.complete { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/complete.gif) }
+#progress.puff li.current { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/current.gif); color: #fff; }
+#progress.puff li.current a { color: #fff; }
+
+#progress.puff li:first-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/incomplete-top.gif) }
+#progress.puff li:last-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/incomplete-bottom.gif) }
+
+#progress.puff li.complete:first-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/complete-top.gif) }
+#progress.puff li.complete:last-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/complete-bottom.gif) }
+
+#progress.puff li.current:first-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/current-top.gif) }
+#progress.puff li.current:last-child { background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/steps/current-bottom.gif) }
+
+#progress.puff .support-text {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/primary-divider.gif) 0 0 repeat-x;
+	padding-top: 1.8em;
+}
+#progress.puff .support-text p {
+	line-height: 1.2;
+}
+#progress.puff p small {
+	font-size: 0.917em;
+}
+#progress.puff li a span { margin-right: 2px; }
+
+.puff-bottom {
+	background-color: #f1f1ee;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	padding: 25px 20px;
+}
+.puff-bottom > dl > dt {
+	color: #4a4a49;
+	font-size: 1.8em;
+	padding-top: 0;
+}
+
+.puff-bottom .link-list {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 0;
+}
+.puff-bottom .link-list li {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/bottom-list.gif) 0 0.55em no-repeat;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	width: 230px;
+	margin: 0;
+}
+.puff-bottom .link-list li:nth-child(2n+1) {
+	clear: left;
+	width: 250px;
+}
+
+
+/**
+* Homepage specific inc Carousel
+*/
+body.homepage #header {
+	padding-bottom: 0;
+}
+#home-top {
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 0 15px;
+	background-color: #fff;
+	margin-bottom: 2px;
+	width: 930px;
+	overflow: hidden;
+}
+#home-top img {
+	border: 0;
+	display: block;
+}
+#home-top #carousel {
+	float: left;
+}
+#home-top #promotion {
+	float: left;
+	border: 0;
+	border-left: 1px dashed #bebeb0;
+	-moz-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 0 0 0 1 repeat repeat;
+	-webkit-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 0 0 0 1 repeat repeat;
+	-khtml-border-image: url(http://www.scottishfriendly.co.uk/assets/site/imagescommon/border.gif) 0 0 0 1 repeat repeat;
+	border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 0 0 0 1 repeat repeat;
+	position: relative;
+	overflow: hidden;
+	width: 227px;
+}
+#home-top #promotion div.button {
+	position: absolute;
+	left: 16px;
+	top: 216px;
+	width: 148px;
+}
+#home-top #promotion div.button .btn {
+	display: block;
+}
+
+#home-bottom {
+	margin-bottom: 6px;
+}
+#home-bottom #product-strip {
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-khtml-border-top-left-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: #f5f5f2;
+}
+#home-bottom #white-strip {
+	background-color: transparent;
+	background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	padding-top: 1px !important;
+	overflow: hidden;
+}
+#home-bottom #white-strip div {
+	background-color: #fff;
+	border: 0;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-size: 1.2em;
+	padding: 18px 15px 17px;
+	width: 930px;
+	overflow: hidden;
+}
+#home-bottom #white-strip .view-all {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/link-arrow.gif) 0 0.35em no-repeat;
+	padding-left: 10px;
+}
+
+/* product strip (homepage) */
+#product-strip {
+	padding: 0 15px;
+	position: relative;
+	overflow: hidden;
+}
+#product-strip ul {
+	width: 930px;
+	overflow: hidden;
+	padding-top: 42px;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+	display: block;
+	position: relative;
+}
+#product-strip li {
+	font-size: 1em;
+	float: left;
+	width: 237px;
+	list-style: none;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/puff-dark-vertical.gif) right 0 repeat-y;
+	position: relative;
+	padding: 0;
+	margin-bottom: 0;
+}
+#product-strip li dl {
+	padding: 0 10px 0 9px;
+	margin-top: -1.6em;
+}
+#product-strip li:first-child {
+	width: 227px;
+}
+#product-strip li:first-child dl {
+	padding-left: 0;
+}
+#product-strip li:last-child {
+	width: 227px;
+	background-image: none;
+}
+#product-strip li:last-child dl {
+	padding-right: 0;
+}
+#product-strip li dl {
+	display: block;
+}
+#product-strip li dd {
+	display: block;
+	position: relative;
+}
+#product-strip li dl dt {
+	font-size: 1.8em;
+	color: #312766;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0.17em;
+	display: block;
+	position: relative;
+}
+#product-strip li dl dt .cufon {
+	float: left;
+}
+#product-strip li .strapline {
+	font-size: 1.4em;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0.7em;
+	display: block;
+}
+#product-strip li .strapline .cufon {
+	float: left;
+}
+#product-strip dd {
+	margin: 0;
+	padding-bottom: 10px;
+}
+#product-strip .btn {
+	margin-top: 10px;
+}
+
+/* carousel */
+#carousel {
+	height: 259px;
+	width: 702px;
+	overflow: hidden;
+	position: relative; /* required for ie6/7 */
+}
+#carousel ul {
+	float: left;
+	zoom: 1;
+	margin-bottom: 0;
+}
+#carousel li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	zoom: 1;
+}
+
+#carousel-controls {
+	clear: both;
+	border: 0;
+	background-color: #fff;
+	border-top: 1px dashed #bebeb0;
+	-moz-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	-webkit-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	-khtml-border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+	border-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/border.gif) 1 0 0 0 repeat repeat;
+}
+#carousel-controls div {
+	background-color: #fff;
+}
+#carousel-controls ul {
+	display: block;
+	overflow: hidden;
+	padding: 5px 0 8px;
+	margin-bottom: 0;
+	outline:0;
+}
+#carousel-controls li {
+	display: inline;
+	float: left;
+	padding: 0;
+	margin-bottom: 0;
+}
+#carousel-controls li a {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/carousel-controls.gif) -16px 4px no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 22px;
+	height: 23px;
+	float: left;
+}
+#carousel-controls li a:hover {
+	background-position: -16px -16px;
+}
+#carousel-controls li.active a {
+	background-position: -16px -36px;
+}
+
+#carousel-controls li.prev a,
+#carousel-controls li.next a {
+	width: 16px;
+}
+#carousel-controls li.prev a { background-position: 0 4px; }
+#carousel-controls li.prev a:hover { background-position: 0 -36px; }
+#carousel-controls li.next a { background-position: -39px 4px; }
+#carousel-controls li.next a:hover { background-position: -39px -36px; }
+
+
+/**
+* M...m...m...MEGA menu
+*/
+.mega-menu {
+	overflow: hidden;
+	width: 942px;
+	left: 9px;
+	position: absolute;
+	left: 9px;
+}
+.mega-menu .shadow {
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/mega/dropshadow.png) 0 bottom no-repeat;
+	_background: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.mega-menu img {
+	border: 0;
+}
+.mega-menu li {
+	list-style: none;
+}
+.mega-menu-outer {
+	float: left;
+
+	border: 1px solid #c1c1b5;
+	border-top: 0;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+
+	background: #f6f6f6 url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/mega/background.gif) 0 0 repeat-x;
+
+	margin-left: 6px;
+	width: 928px;
+}
+
+.mega-menu-inner {
+
+	border: 0;
+	border-bottom: 1px solid #fff;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+
+	float: left;
+
+	padding-left: 29px;
+	padding-right: 10px;
+}
+.mega-menu ul.menu-links {
+	width: 170px;
+	float: left;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/mega/divider.gif) right 0 repeat-y;
+	margin-top: 20px;
+	min-height: 130px;
+	padding-top: 6px;
+	display: inline;
+}
+.mega-menu ul.menu-links li {
+	margin-bottom: 0.43em;
+	padding: 0 10px;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/mega/bullet.gif) 0 0.43em no-repeat;
+}
+.mega-menu .info {
+	width: 209px;
+	float: left;
+	display: inline;
+	padding-left: 30px;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/nav/mega/divider.gif) right 0 repeat-y;
+	color: #4A4A49;
+	margin-top: 20px;
+	padding-right: 50px;
+	min-height: 130px;
+	padding-top: 6px;
+}
+.mega-menu .info p {
+	color: #4A4A49;
+}
+.mega-menu .long-image {
+	float: right;
+	padding-left: 10px;
+}
+.mega-menu .long-image img {
+	margin-bottom: -2px;
+}
+
+/**
+* Tab strip
+*/
+.tab-strip {
+	border-bottom: 1px solid #dcdcd4;
+	margin-bottom: 2.4em;
+}
+.tab-strip ul {
+	display: block;
+	zoom: 1;
+	margin-bottom: 0;
+}
+.tab-strip ul:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .tab-strip ul { zoom: 1; } /* IE6 */
+*:first-child+html .tab-strip ul { zoom: 1; } /* IE7 */
+.tab-strip li {
+	float: left;
+	list-style: none;
+	margin-right: 4px;../img/logo.gif
+	display: inline;
+	border: 1px solid #dcdcd4;
+	border-bottom: 0;
+	background-color: #f6f6f4;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-khtml-border-top-left-radius: 4px;
+	-khtml-border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	font-size: 1.2em;
+	padding: 0;
+	background-image: none;
+	margin-bottom:0px;
+}
+.tab-strip li.active {
+	background-color: #fff;
+	padding-bottom: 1px;
+	margin-bottom: -1px;
+}
+.tab-strip li a {
+	float: left;
+	padding: 6px 12px 4px;
+	color: #6f7072;
+	text-decoration: none;
+	outline: 0;
+}
+
+.tab-container .tab-hidden-x {
+  position: absolute;
+  left: -9999px;
+  width: 520px;
+}
+
+/* Flash & Info box */
+.flash, .info-box {
+	margin-bottom: 20px;
+	padding: 12px 19px;
+	border: 1px solid #dcdcd4;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #fff;
+	clear:both;
+}
+.flash p, .info-box p {
+	color: #444444;
+	padding-left: 28px;
+}
+.info-box ul, .flash ul,
+.info-box ol, .flash ol{
+	padding-left: 2.8em;
+}
+.info-box ul li, .flash ul li,
+.info-box ol li, .flash ol li{
+	color: #444444;
+}
+.flash p:last-child, .info-box p:last-child  {
+	margin-bottom: 0;
+}
+.flash.negative {
+	border-color: #b21307;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/flash-negative.gif) 20px 12px no-repeat;
+}
+.flash.positive {
+	border-color: #00a9dd;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/flash-positive.gif) 20px 12px no-repeat;
+}
+
+.info-box {
+	border: 1px solid #b6d122;
+	background-image: url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/flash-info.gif);
+	background-position: 20px 12px;
+	background-repeat: no-repeat;
+}
+
+/* Data safety icon */
+.data-safety {
+	float: right;
+	width: 198px;
+	padding: 10px;
+	margin: 0 0 20px 20px;
+	border: #d3d3cc 1px solid;
+	background: #f8f8f6 url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/data-safety.gif) 10px 10px no-repeat;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+}
+.data-safety p {
+	padding: 0 0 0 33px;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+/**
+* Sliding sidebar
+*/
+.puff .slide-handle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 19px;
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+	line-height: 19px;
+	cursor: pointer;
+}
+
+form#performance_form{
+	padding-bottom:15px;
+	padding-right:12px;
+}
+
+/**
+* Highcharts
+*/
+
+.chart-container {
+	clear: both;
+	margin: 0 0 3em;
+}
+table#chart-data{
+	margin-top:20px;
+}
+div#highcharts-0{
+	 left: -5.5px!important;
+}
+
+div.performance_age,
+div.performance_premium{
+    float: right;
+    padding-bottom: 15px;
+    padding-left: 10px;
+	padding-right: 5px;
+}
+
+#header #search-form {
+	float: right;
+	clear: right;
+	margin-top: 15px;
+	margin-right: 0px;
+	display: inline;
+	_width: 253px;
+    position: relative;
+}
+
+#header #search-form input {
+    border-radius: 5px 0 0 5px;
+    border-right: 0 none;
+    float: left;
+    font-size: 1.1em;
+    width: 270px;
+    padding: 5px 8px 4px;
+    border-color: #bdbdb6;
+}
+
+#header #search-form label {
+	float: left;
+	font-size: 1.1em;
+	color: #6f7072;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+#header #search-form button {
+	float: left;
+	height: 26px;
+	width: 27px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-indent: -9999px;
+}
+
+div.performance_age label,
+div.performance_premium label{
+	padding-right:4px;
+}
+#chart-container{
+	clear:both;
+}
+
+xmp {
+  text-align: left;
+}
+
+.small-print{
+  font-size: 0.917em;
+  margin-top: 25px;
+}
+
+.small-print dd{
+  margin-bottom: 14px;
+  margin-left: 0px;
+}
+.small-print dt{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #444444;
+}
+.directdebit-graphic{
+  background: url("http://www.scottishfriendly.co.uk/assets/site/images/common/directdebit_logo.gif") no-repeat scroll right top transparent;
+  display: inline;
+  float: right;
+  height: 25px;
+  width: 78px;
+  margin: 0 10px 10px 30px;
+  text-indent: -9000px;
+}
+
+#share-buttons {
+	width: 100%;
+	overflow: hidden;
+}
+#share-buttons .button {
+	float: left;
+}
+
+/**
+* Custom styles grouped radio field styles
+*/
+.form .radio-group {
+	width: 440px;
+	overflow: hidden;
+	background-color: #fff;
+	border-top: 1px dashed #dcdcd4;
+	border-bottom: 1px dashed #dcdcd4;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.form .radio-group:last-child {
+	margin-bottom: 0;
+}
+.form .radio-group .radio_list {
+	width: 100%;
+	overflow: hidden;
+}
+.form .radio-group .radio_list li {
+	width: 20%;
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	list-style-image: none;
+	background: none;
+}
+.form .radio-group label {
+	line-height: 1.417;../img/logo.gif
+	margin: 0;
+	padding: 0 0 3.2em;
+	display: block;
+}
+.form .radio-group .radio_list label {
+	display: block;
+	text-align: center;
+}
+.form .radio-group .radio_list input {
+	float: none;
+}
+/* js specific */
+.form .radio-group .js-radio-group {
+	width: 426px;
+	height: 12px;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid #dcdcd4;
+	border-bottom: 0;
+	position: relative;
+	display: block;
+}
+.form .radio-group .js-radio-group li {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -8px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	margin-left: -8px;
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/custom-radio.gif) 0 0 no-repeat;
+	cursor: pointer;
+}
+.form .radio-group .js-radio-group li:hover { background-position: 0 -40px; }
+.form .radio-group .js-radio-group li.current { background-position: 0 -80px; }
+.form .radio-group .js-radio-group li div {
+	position: relative;
+	top: -1.7em;
+	text-align: center;
+}
+.form .radio-group .scale-text {
+	font-size: 1.1em;
+	color: #737370;
+	padding-top: 7px;
+}
+.form .radio-group .scale-min {
+	float: left;
+	width: 95px;
+	text-align: left;
+}
+.form .radio-group .scale-max {
+	float: right;
+	width: 95px;
+	text-align: right;
+}
+
+li.download-app{
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/arrow-down.gif) 0 center no-repeat;
+	padding-left: 19px;
+	margin-bottom: 0.3em;
+}
+
+li.order-info{
+	background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/puffs/arrow-right.gif) 0 center no-repeat;
+	padding-left: 19px;
+	margin-bottom: 0.3em;
+}
+
+/*multiple product puff styling*/
+
+#apply-today.puff dl dl.offline-docum dt {
+	font-size: 1.5em ;
+	margin-bottom: 0.375em;
+	padding-top: 0px;
+}
+
+#apply-today.puff dl dl.offline-docum{
+	background: none;
+	padding: 0px;
+}
+
+#apply-today.puff dl dl.nested>:first-child{
+	font-size: 1.7em;
+	margin-bottom: 0.8em;
+}
+
+#apply-today.puff dl dl.offline-docum{
+	padding-bottom:0.6em;
+}
+
+#apply-today.puff dl dl.nested dl.offline-docum{
+	padding-bottom: 0;
+}
+
+#apply-today.puff dl dl.nested{
+  padding-bottom: 0.7em;
+  padding-top: 1.3em;
+}
+
+.form .ctrlHolder.fld_medical_intro{
+	margin-bottom: 0px;
+}
+
+.form .ctrlHolder.fld_medical_status label{
+  line-height: 1.417;
+	margin: 0 0 1em;
+}
+
+/* Fund Prices table */
+
+#fund-prices input {
+  width: 3em;
+}
+
+#fund-prices th.num-of-units {
+  width: 3em;
+}
+
+.fund-prices-form .buttonHolder {
+  text-align: right;
+  padding-bottom: 2em;
+}
+
+.sitemap-container ul {
+  margin-top: 10px;
+}
+
+.sitemap-container li {
+	line-height: 1;
+  margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+.sitemap-container li li {
+	font-size: 1em;
+}
+
+/* Chart zoom help */
+
+.zoom-help {
+  width: 60px;
+  height:  16px;
+  margin-top: -28px;
+  margin-bottom: 20px;
+  color: #888;
+  background: transparent url(http://www.scottishfriendly.co.uk/assets/site/images/common/icons/icon_help.gif) 0 0 no-repeat;
+  padding-top: 4px;
+  padding-left: 25px;
+  display: block;
+}
+
+.zoom-help:hover {
+  background-position: 0 -20px;
+}
+
+.chart-zoom-tooltip {
+  width: 300px;
+  height: 110px;
+  padding: 15px 12px;
+  border: 1px dotted #ccc;
+  background-color: #fff;
+  display: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+/* Search results */
+
+.search-results ol li {
+  margin-left: 5px;
+}
+
+.search-results ol li h3 {
+  overflow: inherit;
+}
+
+td input[type="text"] {
+	font-size: 1em;
+}
+
+.form-horizontal .control-group .full-width {
+    width: 100%;
+}

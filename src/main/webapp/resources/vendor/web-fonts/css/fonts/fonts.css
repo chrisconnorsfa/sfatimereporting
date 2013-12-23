@@ -1,0 +1,98 @@
+@import url("https://fast.fonts.com/t/1.css?apiType=css&projectid=79d045d4-064a-4ff8-800f-5909680c9f19");
+@font-face {
+	font-family: "URW Clarendon W01 Light";
+	src: url("cfa0fab8-33ea-4240-ade8-6d2618b72294.eot");
+	src:
+		url("cfa0fab8-33ea-4240-ade8-6d2618b72294.eot?#iefix")
+		format("embedded-opentype"),
+		url("193d6326-3286-46a9-bb89-28c9edf9a003.woff")
+		format("woff"),
+		url("c6313930-bd57-42a1-9ddd-1fca42748c90.ttf")
+		format("truetype"),
+		url("41cc4bf7-0351-4f28-9ff6-7645a928a5b6.svg#41cc4bf7-0351-4f28-9ff6-7645a928a5b6")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URWClarendonW01-Regular 923452";
+	src: url("8ffe8b18-6791-42f4-834f-5300b36f418a.eot");
+	src:
+		url("8ffe8b18-6791-42f4-834f-5300b36f418a.eot?#iefix")
+		format("embedded-opentype"),
+		url("d521427c-a622-4343-9121-5fd9216088e5.woff")
+		format("woff"),
+		url("61aaf2ac-d909-47f6-9fe0-1ac8fb600d30.ttf")
+		format("truetype"),
+		url("2c297035-0850-415d-9586-b2d821fc6abc.svg#2c297035-0850-415d-9586-b2d821fc6abc")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URWClarendonW01-Medium";
+	src: url("ec7bb439-088b-4a1c-a32e-a47c1d8e07d9.eot");
+	src:
+		url("ec7bb439-088b-4a1c-a32e-a47c1d8e07d9.eot?#iefix")
+		format("embedded-opentype"),
+		url("57cee4be-8fa3-4b9c-876e-442057ca59d2.woff")
+		format("woff"),
+		url("d6dcdd20-67b3-40c5-b7b9-3ddc992ca7d3.ttf")
+		format("truetype"),
+		url("b9bc78eb-f6ce-476b-87ed-2feb9920bf9f.svg#b9bc78eb-f6ce-476b-87ed-2feb9920bf9f")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URW Clarendon W01 Bold";
+	src: url("9bd22d0e-9dc7-4a2b-89cb-fa466e3e04e0.eot");
+	src:
+		url("9bd22d0e-9dc7-4a2b-89cb-fa466e3e04e0.eot?#iefix")
+		format("embedded-opentype"),
+		url("07241373-33f5-4c29-b79a-1726569ab00b.woff")
+		format("woff"),
+		url("8950d620-f17d-49b9-97ff-94c572159047.ttf")
+		format("truetype"),
+		url("c8434a83-b873-4a50-9d19-40e397cadd0c.svg#c8434a83-b873-4a50-9d19-40e397cadd0c")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URWClarendonW01-Regular 923467";
+	src: url("7f8690c8-ffa8-4942-b211-7aad96ed7495.eot");
+	src:
+		url("7f8690c8-ffa8-4942-b211-7aad96ed7495.eot?#iefix")
+		format("embedded-opentype"),
+		url("2659a9ab-af19-46dc-ab2f-ff3ff103e40c.woff")
+		format("woff"),
+		url("7fde407c-42fa-4c68-bced-55e5a2054b33.ttf")
+		format("truetype"),
+		url("112a678d-e7e1-4844-b23e-a4ce842909c2.svg#112a678d-e7e1-4844-b23e-a4ce842909c2")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URWClarendonW01-MediumO";
+	src: url("d08a52a4-aee8-4a60-a622-67ff54a8e1f4.eot");
+	src:
+		url("d08a52a4-aee8-4a60-a622-67ff54a8e1f4.eot?#iefix")
+		format("embedded-opentype"),
+		url("59ce738f-ecd2-4eca-ae4c-c0f2441392f0.woff")
+		format("woff"),
+		url("8012cee3-9bbb-40ee-95f3-bcc18b25e1db.ttf")
+		format("truetype"),
+		url("791761f2-f5a3-4342-8179-975df43eac32.svg#791761f2-f5a3-4342-8179-975df43eac32")
+		format("svg");
+}
+
+@font-face {
+	font-family: "URWClarendonW01-BoldObl";
+	src: url("8df28b18-174a-437d-8da7-1bfd2432f850.eot");
+	src:
+		url("8df28b18-174a-437d-8da7-1bfd2432f850.eot?#iefix")
+		format("embedded-opentype"),
+		url("bb51dcce-ea98-43f9-8bfc-ea7175f5a866.woff")
+		format("woff"),
+		url("70327f34-b8e6-47ac-8e11-918ffcd2c9c9.ttf")
+		format("truetype"),
+		url("5b70090b-e93a-4319-94de-d884399667b0.svg#5b70090b-e93a-4319-94de-d884399667b0")
+		format("svg");
+}

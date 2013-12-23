@@ -1,0 +1,46 @@
+
+/* regular */
+h1, 
+.puff > dl > dt, 
+.offline-docum dt, 
+#header .tel, 
+.puff-secondary .contact .tel, 
+a.btn-apply, 
+#fancybox-title, 
+.af-link dt {
+	font-family: "URWClarendonW01-Medium", serif;
+	font-weight: normal;
+}
+a.btn-apply {
+	font-family: "URWClarendonW01-Regular 923452", serif;
+}
+
+h2, 
+.form .legend, 
+.nested dt,  
+#product-strip > ul > li > dl > dt, 
+.puff-bottom dt, 
+.puff-bottom dt, 
+#home-top-footer dt, 
+#home-puffs .col > dt,
+#home-puffs .col .cookies dt{
+	font-family: "URWClarendonW01-Regular 923452", serif;
+	font-weight: normal;
+}
+
+#product-strip > ul > li > dl > dt {
+	line-height: 1.2;
+	margin-bottom: -2px;
+}
+
+h2.sub, 
+#product-strip > ul > li > dl > dd > .strapline, 
+.af-link .strapline {
+	font-family: "URW Clarendon W01 Light", serif;
+	font-weight: normal;
+}
+
+#social-links dt {
+    font-family: "URWClarendonW01-Regular 923452", serif;
+    
+}
