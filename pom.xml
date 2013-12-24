@@ -32,8 +32,8 @@
     
     <scm>
         
-		<connection>scm:git@github.com:chrisconnorsfa/sfatimereporting.git</connection>
-		<developerConnection>scm:git@github.com:chrisconnorsfa/sfatimereporting.git</developerConnection>
+		<connection>scm:git:git@github.com:chrisconnorsfa/sfatimereporting.git</connection>
+		<developerConnection>scm:git:git@github.com:chrisconnorsfa/sfatimereporting.git</developerConnection>
 		<url>https://github.com/chrisconnorsfa/sfatimereporting/</url>
 	    <tag>mavenproject1-frontend-1.0</tag>
     </scm>
