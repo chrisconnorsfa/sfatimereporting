@@ -30,6 +30,26 @@
         <testkit.version>5.2-m29</testkit.version>
     </properties>
     
+    <scm>
+        
+		<connection>scm:git@github.com:chrisconnorsfa/sfatimereporting.git</connection>
+		<developerConnection>scm:git@github.com:chrisconnorsfa/sfatimereporting.git</developerConnection>
+		<url>https://github.com/chrisconnorsfa/sfatimereporting/</url>
+	    <tag>mavenproject1-frontend-1.0</tag>
+    </scm>
+	
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>libs-release</name>
+			<url>http://canna:8080/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://canna:8080/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
     <dependencies>
         <dependency>
