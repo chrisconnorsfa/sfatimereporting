@@ -6,6 +6,7 @@ package com.scottishfriendly.timereporting.ui.controllers;
 
 import com.atlassian.jira.rest.client.api.domain.BasicProject;
 import java.util.Date;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.format.annotation.DateTimeFormat;
 
 /**
@@ -85,5 +86,26 @@ public class JiraSummaryScreen {
     }
     
     
+	public boolean isEmpty() {
+		return isHoursEmpty()
+ && isMinsEmpty() && isDescriptionEmpty()
+				&& isDateEmpty();
+	}
+
+	public boolean isHoursEmpty() {
+		return hours == null;
+	}
+    
+    public boolean isMinsEmpty() {
+		return mins == null;
+	}
+
+	public boolean isDescriptionEmpty() {
+		return StringUtils.isBlank(description);
+	}
+
+	public boolean isDateEmpty() {
+		return date == null;
+	}
     
 }

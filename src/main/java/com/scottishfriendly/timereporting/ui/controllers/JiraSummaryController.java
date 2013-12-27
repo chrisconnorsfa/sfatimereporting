@@ -21,11 +21,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ValidationUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -79,17 +81,22 @@ public class JiraSummaryController {
     }
     
     @RequestMapping(value="/create/{jiraId}/{projectId}", method = RequestMethod.POST)
-    public ModelAndView doCreate(ModelMap modelMap, @PathVariable String projectId,@PathVariable String jiraId, @ModelAttribute("entryScreen") JiraSummaryScreen entryScreen, BindingResult bindingResult){
+    public ModelAndView doCreate(ModelMap modelMap, @PathVariable String projectId,@PathVariable String jiraId, @Valid @ModelAttribute("entryScreen") JiraSummaryScreen entryScreen, BindingResult bindingResult){
         
+        TimePostingValidator validator = new TimePostingValidator();
+        
+        ValidationUtils.invokeValidator(validator, entryScreen, bindingResult);
         // Logic disabled for testing
-        boolean isSuccess = createTimeEntry(entryScreen,jiraId,projectId);
-        modelMap.addAllAttributes(populateModel(modelMap, resetEntryFields(entryScreen), jiraId));
-        boolean wah = true;
+        if(!bindingResult.hasErrors()){
+            boolean isSuccess = createTimeEntry(entryScreen,jiraId,projectId);
+            modelMap.addAllAttributes(populateModel(modelMap, resetEntryFields(entryScreen), jiraId));
+        }
+        
         RedirectView rv = new RedirectView("/"+BASE_VIEW+"/"+jiraId);
         rv.setExposeModelAttributes(false);
         rv.setContextRelative(true);
         ModelAndView modelandview = new ModelAndView(rv);
-       
+      
         
         return modelandview;
     }
