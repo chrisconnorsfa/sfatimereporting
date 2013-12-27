@@ -32,6 +32,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.view.RedirectView;
 
 /**
  *
@@ -84,8 +85,12 @@ public class JiraSummaryController {
         boolean isSuccess = createTimeEntry(entryScreen,jiraId,projectId);
         modelMap.addAllAttributes(populateModel(modelMap, resetEntryFields(entryScreen), jiraId));
         boolean wah = true;
-        ModelAndView modelandview = new ModelAndView("/"+BASE_VIEW+"/"+jiraId);
+        RedirectView rv = new RedirectView("/"+BASE_VIEW+"/"+jiraId);
+        rv.setExposeModelAttributes(false);
+        rv.setContextRelative(true);
+        ModelAndView modelandview = new ModelAndView(rv);
        
+        
         return modelandview;
     }
     
